@@ -3,10 +3,10 @@ name: Code analysis
 
 jobs:
   test:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     name: check tests
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v6
       with:
         fetch-depth: 0
     - uses: testomatio/check-tests@stable
